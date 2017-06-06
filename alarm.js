@@ -10,7 +10,7 @@ Alarm.prototype.isExpired = function () {
         return true;
     }
     var elapsedSeconds = (this._getTime() - this.creationTime) / 1000;
-    return elapsedSeconds > this.expireAfterSeconds;
+    return elapsedSeconds >= this.expireAfterSeconds;
 }
 
 Alarm.prototype._getTime = function () {

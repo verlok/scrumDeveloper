@@ -19,10 +19,12 @@ test("Alarm(10) should be immediately false", () => {
 });
 
 test("Alarm(10) should be true after 10 seconds", () => {
+    var currentTime = 0;
     var seconds = 10;
-    var alarm10 = new Alarm(seconds);
     Alarm.prototype._getTime = function(){
-        return Date.now() + seconds * 1001;
+        return currentTime;
     }
+    var alarm10 = new Alarm(seconds);
+    currentTime = seconds * 1000;
     expect(alarm10.isExpired()).toBe(true);
 });
