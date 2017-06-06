@@ -26,3 +26,10 @@ test("Alarm(10) should be true after 10 seconds", () => {
     jest.runTimersToTime(1000 * 10);
     expect(alarm10.isExpired).toBe(true);
 });
+
+test("WriteMessage is called at least once", () => {
+    Alarm.prototype.writeMessage = jest.fn();
+    var alarm10 = new Alarm(10, "I'm expired");
+    jest.runTimersToTime(1000 * 10);
+    expect(Alarm.prototype.writeMessage.mock.calls.length).toBe(1);
+});
