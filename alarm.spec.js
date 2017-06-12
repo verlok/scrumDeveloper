@@ -31,5 +31,5 @@ test("WriteMessage is called at least once", () => {
     Alarm.prototype.writeMessage = jest.fn();
     var alarm10 = new Alarm(10, "I'm expired");
     jest.runTimersToTime(1000 * 10);
-    expect(Alarm.prototype.writeMessage.mock.calls.length).toBe(1);
+    expect(Alarm.prototype.writeMessage).toHaveBeenCalledTimes(1);
 });
