@@ -14,5 +14,7 @@ describe('Roman numbers', () => {
     test("3 -> III", () => {
         expect(roman(3)).toBe("III");
     });
-    
+    test("4 -> IV", () => {
+        expect(roman(4)).toBe("IV");
+    });
 });
