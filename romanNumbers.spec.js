@@ -4,138 +4,15 @@ test('Function exists', () => {
     expect(typeof roman).toBe("function");
 });
 
-describe('Roman numbers until 3', () => {
+describe('Roman numbers', () => {
     test("1 -> I", () => {
         expect(roman(1)).toBe("I");
     });
     test("2 -> II", () => {
-        expect(roman(1)).toBe("I");
+        expect(roman(2)).toBe("II");
     });
     test("3 -> III", () => {
-        expect(roman(1)).toBe("I");
+        expect(roman(3)).toBe("III");
     });
+    
 });
-
-/*
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-
-describe('', () => {
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-    test("", () => {
-
-    });
-});
-*/
